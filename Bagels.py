@@ -7,17 +7,16 @@ import random
 again = "S"
 while again == "S":
     numero = list(str(random.randint(1, 999)).zfill(3))
-    print(numero)
 
-    for i in range(0, 11):
+    for i in range(0, 10):
         palpite = list(str(input("Digite um numero: ")).zfill(3))
         if palpite == numero:
             print("Parabens, voce adivinhou!!")
             i = "V"
             break
-        if palpite[0] not in numero and palpite[1] not in numero and palpite[2] not in numero:
+        if (palpite[0] not in numero and palpite[1] not in numero and palpite[2] not in numero) and i != 9:
             print("Bagels")
-        else:
+        elif i != 9:
             if palpite[0] in numero:
                 if palpite[0] == numero[0]:
                     print("Fermi")
