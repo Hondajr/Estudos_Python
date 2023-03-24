@@ -1,7 +1,6 @@
 # Pico      Um digito correto, mas posição errada
 # Fermi     Um digito correto, e nao posição correta
 # Bagels    Nenhum digito correto
-# Randomizar um numero de 3 digitos, o usuario deve adivinham em 10 turnos
 
 import random
 
